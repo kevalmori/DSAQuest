@@ -27,6 +27,9 @@
 ![Home Page](Images/Index_Page%20(1).png)
 ![Home Page](Images/Index_Page%20(2).png)
 
+### 📊 CF Profile Page
+![Profile Image](Images/CF_Profile.png)
+
 ### 🔐 Login Page
 ![Login Page](Images/Login.png)
 
@@ -50,16 +53,6 @@
 
 ---
 
-## 📈 Future Roadmap
-
-- 🔗 Backend integration for persistent data
-- 🔐 Secure user authentication with token-based login
-- 🏆 Codeforces-based leaderboard system
-- 🔎 Difficulty & tag-based filtering
-- 🌙 Dark mode UI toggle
-
----
-
 ## 🛠 Tech Stack
 
 - HTML, CSS, JavaScript
@@ -73,6 +66,6 @@
 To run the project locally:
 
 ```bash
-git clone https://github.com/your-username/dsaquest.git
+git clone https://github.com/kevalmori/DSAQuest.git
 cd dsaquest
 # Open index.html in your browser
