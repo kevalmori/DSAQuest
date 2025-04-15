@@ -1,39 +1,78 @@
-# DSAQuest 🚀
+# 🚀 DSAQuest
 
-## Overview 👀
+## 👀 Overview
 
 ![Cover Image](Images/Index_Page.png)
 ![Profile Image](Images/CF_Profile.png)
 
-DSAQuest is a simple, clean, and responsive website designed to help you master 450+ Data Structures & Algorithms (DSA) problems—built using plain JavaScript, HTML, CSS, and API integration!
+**DSAQuest** is a clean, responsive, and user-friendly platform designed to help you master **450+ DSA questions**. Built using **vanilla JavaScript, HTML, CSS**, and **API integration**, it's tailored for coding enthusiasts preparing for placements and improving their problem-solving skills.
 
-### 🔍 Features:
-- ✅ Topic-wise question search
-- 📊 Track your DSA progress
-- 📦 LocalStorage-based saving
-- 📱 Mobile-first responsive design
-- ✨ Clean and intuitive UI
+---
 
-## Images of the Website:
+## 🔍 Features
 
-### Home Page:
+- ✅ Track solved questions across multiple DSA topics
+- 📌 Bookmark important questions for later
+- 📊 Visualize Codeforces progress using charts
+- 🔗 Codeforces API integration (real-time rank, rating & problem stats)
+- 🔐 Simple registration & login (localStorage/sessionStorage)
+- 🧩 Topic-based question segregation and tracking
+
+---
+
+## 🖼️ Screenshots
+
+### 🏠 Home Page
+![Cover Image](Images/Index_Page.png)
 ![Home Page](Images/Index_Page%20(1).png)
+![Home Page](Images/Index_Page%20(2).png)
 
-### Login Page:
+### 🔐 Login Page
 ![Login Page](Images/Login.png)
 
-### Registration Page:
+### 📝 Registration Page
 ![Register Page](Images/Register.png)
 
-### Topic Page:
+### 📂 Topic Page
 ![Topic Page](Images/Topic.png)
 
 ---
 
-## 💡 What is DSAQuest?
+## 🧠 How It Works
 
-**DSAQuest** is your go-to web-based tool for mastering over 450 handpicked Data Structures & Algorithms questions categorized by topic.
+- 🧑‍💼 On registration, user data is stored securely in `localStorage`
+- ✅ Question checkboxes are used to track completion and bookmarks
+- 📈 Progress is dynamically calculated topic-wise and globally
+- 📡 Codeforces handle fetches:
+  - 📊 Rank & Ratings (current and max)
+  - 🧮 Solved Problems
+  - 📈 Charts based on problem rating and tags
 
-💥 It doesn’t guarantee a job but gives you the confidence to tackle any coding challenge like a pro!
+---
 
-📚 Inspired by [Love Babbar's DSA Sheet](https://www.youtube.com/watch?v=4iFALQ1ACdA), and enhanced with an intuitive interface.
+## 📈 Future Roadmap
+
+- 🔗 Backend integration for persistent data
+- 🔐 Secure user authentication with token-based login
+- 🏆 Codeforces-based leaderboard system
+- 🔎 Difficulty & tag-based filtering
+- 🌙 Dark mode UI toggle
+
+---
+
+## 🛠 Tech Stack
+
+- HTML, CSS, JavaScript
+- LocalStorage / SessionStorage
+- Codeforces API
+
+---
+
+## 🚀 Getting Started
+
+To run the project locally:
+
+```bash
+git clone https://github.com/your-username/dsaquest.git
+cd dsaquest
+# Open index.html in your browser
