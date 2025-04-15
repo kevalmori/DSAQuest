@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - DSA Cracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+    </div>
+
+    <div class="register-container">
+        <div class="logo-container">
+            <i class="fas fa-user-plus logo-icon"></i>
+            <h2>Register</h2>
+        </div>
+        <form id="registerForm">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Choose a username" required>
+
+            <label for="cf">CodeForces Handle</label>
+            <input type="text" id="cf" placeholder="Your CodeForces handle (optional)">
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Create a password" required>
+
+            <label for="ConfirmPass">Confirm Password</label>
+            <input type="password" id="ConfirmPass" placeholder="Confirm your password" required>
+            
+            <p class="password-hint">Password must be 8-16 characters long</p>
+
+            <button type="submit"><i class="fas fa-user-check"></i> Create Account</button>
+        </form>
+        <p class="switch">Already have an account? <a href="login.html">Login</a></p>
+    </div>
+
+    <script>
+        document.getElementById("registerForm").addEventListener("submit", function(event) {
+            
+            event.preventDefault();
+            const username= document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+            const cf = document.getElementById("cf").value.trim();
+
+            if(localStorage.getItem(username+"_"+"username")!==null)
+        {
+            alert("Username is already registered !! ");
+        }
+        else 
+        {
+            var len=password.length;
+            if(len>16||len<8)
+            {
+                alert("Password size must be 8 to 16");
+            }
+            else if(password!==document.getElementById("ConfirmPass").value)
+            {
+                alert("Confirm Password does not match with Password !! ");
+            }
+            else {
+            const userkey=username+"_";
+            
+            localStorage.setItem(userkey+"Username",username);
+            localStorage.setItem(userkey+"Password", password);
+            if(cf.trim()=="") {localStorage.setItem(userkey+"Cf", "!!!gotoback!!!");}
+            else {localStorage.setItem(userkey+"Cf", cf);}
+            
+            alert("Registration successful! Please log in.");
+            window.location.href = "login.html";
+        }}
+            
+        });
+    </script>
+</body>
+</html>

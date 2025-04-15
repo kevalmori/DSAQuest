@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DSAQuest</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </head>
+  <body>
+    <div class="app-container">
+      <header>
+        <div class="logo-container">
+          <i class="fas fa-code logo-icon"></i>
+          <h1>DSAQuest</h1>
+        </div>
+        <h2>Your Gateway to Crack DSA</h2>
+        <h2 id="totalQuestions" class="stats-display"></h2>
+        
+        <div class="progress-section">
+          <div class="progress-label">Overall Progress</div>
+          <div class="progress-container">
+            <div class="progress-bar" id="globalProgressBar"></div>
+          </div>
+        </div>
+        
+        <div class="action-buttons">
+          <button id="CodeForces" onclick="myFunction()">
+            <i class="fas fa-user-chart"></i> CodeForces
+          </button>
+          <button id="LogOut" onclick="window.location.href='login.html'">
+            <i class="fas fa-sign-out-alt"></i> LogOut
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <div class="topics-heading">
+          <i class="fas fa-book-open"></i>
+          <h3>DSA Topics</h3>
+        </div>
+        
+        <div class="topics-container">
+          <table>
+            <tr>
+              <td><span id="Array" class="Array"></span></td>
+              <td><span id="Matrix" class="Matrix"></span></td>
+              <td><span id="String" class="String"></span></td>
+            </tr>
+            <tr>
+              <td><span id="Searching & Sorting" class="Searching & Sorting"></span></td>
+              <td><span id="LinkedList" class="LinkedList"></span></td>
+              <td><span id="Binary Trees" class="Binary Trees"></span></td>
+            </tr>
+            <tr>
+              <td><span id="Binary Search Trees" class="Binary Search Trees"></span></td>
+              <td><span id="Greedy" class="Greedy"></span></td>
+              <td><span id="BackTracking" class="BackTracking"></span></td>
+            </tr>
+            <tr>
+              <td><span id="Stacks & Queues" class="Stacks & Queues"></span></td>
+              <td><span id="Heap" class="Heap"></span></td>
+              <td><span id="Graph" class="Graph"></span></td>
+            </tr>
+            <tr>
+              <td><span id="Trie" class="Trie"></span></td>
+              <td><span id="Dynamic Programming" class="Dynamic Programming"></span></td>
+              <td><span id="Bit Manipulation" class="Bit Manipulation"></span></td>
+            </tr>
+          </table>
+        </div>
+      </main>
+      
+      <footer>
+        <div class="footer-content">
+          <br>
+          <p> 2025 DSAQuest | Your journey to mastering Data Structures & Algorithms</p>
+          <p style="font-size: 0.9rem; color: #666; text-align: center; margin-top: 30px;">
+            <b>Disclaimer</b>: This website uses the DSA sheet created by <strong>Love Babbar</strong> for educational purposes. 
+            We do not claim ownership of the original content. All credit for the question sheet goes to 
+            <a href="https://www.linkedin.com/in/love-babbar-38ab2887/" target="_blank" rel="noopener noreferrer">Love Babbar</a>. 
+            Our goal is to make it more interactive and user-friendly for practice and tracking progress.
+        </p>
+        
+        </div>
+      </footer>
+    </div>
+
+    <div class="background-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+      <div class="shape shape-4"></div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

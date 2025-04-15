@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codeforces Profile - DSA Cracker</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+    </div>
+
+    <!-- User Information -->
+    <div id="user-info">
+        <h2><i class="fas fa-user-circle"></i> Codeforces User Information</h2>
+        <div id="container"></div>
+    </div>
+
+    <!-- Charts Section -->
+    <div id="chart-section">
+        <h2><i class="fas fa-chart-line"></i> Problem Analysis</h2>
+        <div id="charts-container">
+            <div class="chart-box">
+                <h3><i class="fas fa-chart-bar"></i> Rating Distribution</h3>
+                <canvas id="cfChart"></canvas>
+            </div>
+            <div class="chart-box">
+                <h3><i class="fas fa-chart-pie"></i> Problem Tag Distribution</h3>
+                <canvas id="PieChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <div style="text-align: center;">
+        <a href="index.html" class="back-button"><i class="fas fa-home"></i> Back to Dashboard</a>
+    </div>
+
+    <script src="profile.js"></script>
+</body>
+</html>
